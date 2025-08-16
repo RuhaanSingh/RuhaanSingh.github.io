@@ -16,6 +16,21 @@ const About = () => {
     "AWS", "Docker", "Git", "Machine Learning", "Computer Vision"
   ];
 
+  const apCourses = [
+    "AP Computer Science A", "Artificial Intelligence 1&2 AV", "Mobile App Dev AV", "Web App Dev AV",
+    "Computer Vision 1&2 AV", "AP Statistics", "AP Macro & Micro Economics", "AP Calculus AB",
+    "AP Calculus BC", "AP US History", "AP Government", "AP Language", "AP Physics C ME&M"
+  ];
+
+  const academicHonors = [
+    "Fairfax County Peace Award - Fairfax County School District",
+    "AP Scholar with Distinction - College Board",
+    "Outstanding Project Award: TJ Science Fair, advanced to Regional Science Fair",
+    "Computer Vision Based early diagnosis of Parkinson Disease - Selected for Invention Virginia Northern Virginia Expo",
+    "Biomedical Engineering Innovation Award by VTech",
+    "Virginia State Finalist - Inventions Virginia"
+  ];
+
   return (
     <section id="about" className="py-20 bg-muted/30">
       <div className="container mx-auto px-6">
@@ -76,14 +91,39 @@ const About = () => {
             </div>
           </div>
 
-          <div className="fade-in">
-            <h3 className="text-2xl font-semibold mb-6 text-center">Technical Skills</h3>
-            <div className="flex flex-wrap justify-center gap-3">
-              {skills.map((skill, index) => (
-                <Badge key={index} variant="outline" className="text-sm py-2 px-4">
-                  {skill}
-                </Badge>
-              ))}
+          <div className="space-y-12 fade-in">
+            <div>
+              <h3 className="text-2xl font-semibold mb-6 text-center">Academic Honors</h3>
+              <div className="grid md:grid-cols-2 gap-3">
+                {academicHonors.map((honor, index) => (
+                  <div key={index} className="flex items-start gap-2 text-sm">
+                    <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0" />
+                    <span className="text-muted-foreground">{honor}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-semibold mb-6 text-center">Advanced Placement Courses</h3>
+              <div className="flex flex-wrap justify-center gap-2">
+                {apCourses.map((course, index) => (
+                  <Badge key={index} variant="secondary" className="text-xs py-1 px-3">
+                    {course}
+                  </Badge>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-semibold mb-6 text-center">Technical Skills</h3>
+              <div className="flex flex-wrap justify-center gap-3">
+                {skills.map((skill, index) => (
+                  <Badge key={index} variant="outline" className="text-sm py-2 px-4">
+                    {skill}
+                  </Badge>
+                ))}
+              </div>
             </div>
           </div>
         </div>

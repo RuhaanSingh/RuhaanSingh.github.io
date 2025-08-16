@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Github, Linkedin, Mail, ExternalLink } from "lucide-react";
+import { Github, Linkedin, Mail, ExternalLink, FileText } from "lucide-react";
 import heroImage from "@/assets/ruhaan-portrait.jpg";
 
 const Hero = () => {
@@ -60,6 +60,16 @@ const Hero = () => {
               Get In Touch
               <Mail className="ml-2 h-4 w-4" />
             </Button>
+            <Button 
+              variant="secondary" 
+              size="lg"
+              asChild
+            >
+              <a href="https://drive.google.com/file/d/1Tpx8YnDSqDA0LXEMRgIghpRDH8WIniqr/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                Resume
+                <FileText className="ml-2 h-4 w-4" />
+              </a>
+            </Button>
           </div>
 
           <div className="flex justify-center space-x-6">
@@ -80,7 +90,7 @@ const Hero = () => {
               <Linkedin className="h-6 w-6" />
             </a>
             <a
-              href="mailto:ruhaan@example.com"
+              href="mailto:ruhaansingh102@gmail.com"
               className="text-muted-foreground hover:text-primary transition-colors"
             >
               <Mail className="h-6 w-6" />
