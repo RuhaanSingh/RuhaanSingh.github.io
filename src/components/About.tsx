@@ -10,11 +10,13 @@ const About = () => {
     { icon: BookOpen, label: "Research Papers", value: "2" },
   ];
 
-  const skills = [
-    "Python", "JavaScript", "TypeScript", "React", "Next.js",
-    "PyTorch", "TensorFlow", "Node.js", "PostgreSQL", "MongoDB",
-    "AWS", "Docker", "Git", "Machine Learning", "Computer Vision"
-  ];
+  const skillCategories = {
+    "CV/Machine Learning": ["Python", "TensorFlow", "OpenCV", "PyTorch", "Jupyter", "MATLAB"],
+    "Frontend": ["HTML", "CSS", "JavaScript", "React", "Next.js", "Angular", "Flutter"],
+    "Backend": ["Node.js", "Python", "MongoDB", "MySQL", "Flask", "Django", "Java"],
+    "Mobile": ["Android", "Kotlin", "Android Studio", "Flutter"],
+    "Others": ["Git", "GitHub", "R", "RStudio", "VS Code", "Blender", "TypeScript"]
+  };
 
   const apCourses = [
     "AP Computer Science A", "Artificial Intelligence 1&2 AV", "Mobile App Dev AV", "Web App Dev AV",
@@ -117,11 +119,18 @@ const About = () => {
 
             <div>
               <h3 className="text-2xl font-semibold mb-6 text-center">Technical Skills</h3>
-              <div className="flex flex-wrap justify-center gap-3">
-                {skills.map((skill, index) => (
-                  <Badge key={index} variant="outline" className="text-sm py-2 px-4">
-                    {skill}
-                  </Badge>
+              <div className="space-y-6">
+                {Object.entries(skillCategories).map(([category, skills], categoryIndex) => (
+                  <div key={categoryIndex} className="text-center">
+                    <h4 className="text-lg font-medium text-primary mb-3">{category}</h4>
+                    <div className="flex flex-wrap justify-center gap-2">
+                      {skills.map((skill, skillIndex) => (
+                        <Badge key={skillIndex} variant="outline" className="text-sm py-1 px-3">
+                          {skill}
+                        </Badge>
+                      ))}
+                    </div>
+                  </div>
                 ))}
               </div>
             </div>

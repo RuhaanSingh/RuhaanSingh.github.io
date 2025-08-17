@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Github, Linkedin, Mail, ExternalLink, FileText } from "lucide-react";
-import heroImage from "@/assets/ruhaan-portrait.jpg";
+const heroImage = "/lovable-uploads/b4582ef1-b120-4ad5-a5ab-2701030b19a0.png";
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -90,7 +90,7 @@ const Hero = () => {
               <Linkedin className="h-6 w-6" />
             </a>
             <a
-              href="mailto:ruhaansingh102@gmail.com"
+              href="mailto:ruhaansingh101@gmail.com"
               className="text-muted-foreground hover:text-primary transition-colors"
             >
               <Mail className="h-6 w-6" />
