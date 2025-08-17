@@ -3,8 +3,11 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Github, ExternalLink, FileText } from "lucide-react";
 import cropHealthImage from "@/assets/crophealth-ai.jpg";
-import glaucoGuardImage from "@/assets/glaucoguard.jpg";
-import ragChatbotImage from "@/assets/rag-chatbot.jpg";
+
+const glaucoGuardImage = "/lovable-uploads/37160d22-e23b-4a6c-a490-97113824d979.png";
+const ragChatbotImage = "/lovable-uploads/9a6508fd-b402-4b22-be7a-1cbafe778228.png";
+const aachooImage = "/lovable-uploads/af8634bb-2ccf-4d04-9a7f-fe2630aedc96.png";
+const parkinsonsImage = "/lovable-uploads/24b87b8c-2a82-4a79-8aea-6dbc61d721bb.png";
 
 const Projects = () => {
   const projects = [
@@ -54,7 +57,7 @@ const Projects = () => {
       title: "AACHOO.AI",
       subtitle: "AI-Powered Air Quality Health Platform",
       description: "Developed a web-based AI platform to analyze air quality data and predict potential allergic reactions for travelers based on pollutant levels. The system leveraged geolocation data and real-time air quality metrics to deliver personalized health insights, enhancing user safety during travel.",
-      image: cropHealthImage,
+      image: aachooImage,
       technologies: ["JavaScript", "AI/ML", "Geolocation", "API Integration", "Health Analytics"],
       status: "Deployed web application",
       organization: "Independent Project",
@@ -67,7 +70,7 @@ const Projects = () => {
       title: "Parkinson's Disease Early Detection",
       subtitle: "Handwriting & Spiral Test Analysis",
       description: "Developed an AI-driven system utilizing computer vision and kinematic analysis to detect early Parkinson's disease markers through digital assessment of spiral drawings and handwriting patterns. Achieved 91.6% accuracy using a Stacked Ensemble framework with MLP meta-learner.",
-      image: glaucoGuardImage,
+      image: parkinsonsImage,
       technologies: ["Computer Vision", "CNN", "SVM", "Random Forest", "Medical AI", "Python"],
       status: "Research completed, 91.6% accuracy achieved",
       organization: "Independent Research Project",
