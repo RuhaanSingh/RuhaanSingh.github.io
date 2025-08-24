@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Github, Linkedin, Mail, ExternalLink, FileText } from "lucide-react";
-const heroImage = "/lovable-uploads/b4582ef1-b120-4ad5-a5ab-2701030b19a0.png";
+const heroImage = "/lovable-uploads/26ba7305-56a5-4c0c-8916-4ec3a23e1068.png";
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
