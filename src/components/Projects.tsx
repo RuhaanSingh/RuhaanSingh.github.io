@@ -21,7 +21,7 @@ const Projects = () => {
       organization: "Virginia Tech Institute for Advanced Computing",
       type: "Summer Engineering Internship",
       links: {
-        paper: "https://docs.google.com/document/d/1-LNPOAjuDEgVQdFs0l57qEft7rl7UUDKvNiApBynivQ/edit?tab=t.0#heading=h.rixq1yialnfn"
+        paper: "https://vt-scienceengineering.blogspot.com/2025/09/crophealth-ai-portable-ml-system-for.html#more"
       }
     },
     {
@@ -50,7 +50,8 @@ const Projects = () => {
       links: {
         paper: "https://docs.google.com/document/d/1U0RFuI6RLt4gZm6gy3zYEOKHILus_9ajevpYTuGvg3k/edit?tab=t.0#heading=h.f1l8ljw7ngre",
         poster: "https://docs.google.com/presentation/d/1k7BA6qxHX4d1mWpWEwymfJG4C5VapDzHCNm9uUFmdf8/edit?usp=sharing",
-        github: "https://github.com/RuhaanSingh/Leveraging-the-Table-of-Contents-to-Improve-Efficiency-in-an-RAG-Powered-Chatbot-"
+        github: "https://github.com/RuhaanSingh/Leveraging-the-Table-of-Contents-to-Improve-Efficiency-in-an-RAG-Powered-Chatbot-",
+        publication: "https://journals.gmu.edu/jssr/index"
       }
     },
     {
@@ -163,6 +164,14 @@ const Projects = () => {
                           <a href={project.links.poster} target="_blank" rel="noopener noreferrer">
                             <FileText className="h-4 w-4 mr-2" />
                             Poster
+                          </a>
+                        </Button>
+                      )}
+                      {project.links.publication && (
+                        <Button variant="outline" size="sm" asChild>
+                          <a href={project.links.publication} target="_blank" rel="noopener noreferrer">
+                            <ExternalLink className="h-4 w-4 mr-2" />
+                            Publication
                           </a>
                         </Button>
                       )}
