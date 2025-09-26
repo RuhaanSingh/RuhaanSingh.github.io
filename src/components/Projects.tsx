@@ -51,7 +51,7 @@ const Projects = () => {
         paper: "https://docs.google.com/document/d/1U0RFuI6RLt4gZm6gy3zYEOKHILus_9ajevpYTuGvg3k/edit?tab=t.0#heading=h.f1l8ljw7ngre",
         poster: "https://docs.google.com/presentation/d/1k7BA6qxHX4d1mWpWEwymfJG4C5VapDzHCNm9uUFmdf8/edit?usp=sharing",
         github: "https://github.com/RuhaanSingh/Leveraging-the-Table-of-Contents-to-Improve-Efficiency-in-an-RAG-Powered-Chatbot-",
-        publication: "https://journals.gmu.edu/jssr/index"
+        publication: "https://journals.gmu.edu/jssr/article/view/5163"
       }
     },
     {
