@@ -82,7 +82,7 @@ const Hero = () => {
               <Github className="h-6 w-6" />
             </a>
             <a
-              href="https://linkedin.com/in/ruhaan-singh"
+              href="https://www.linkedin.com/in/ruhaan-singh-19200a335/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
