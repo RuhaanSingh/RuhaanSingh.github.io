@@ -48,7 +48,7 @@ const Projects = () => {
       organization: "GMU ASSIP - AI4Gov Division",
       type: "Summer Internship",
       links: {
-        paper: "https://docs.google.com/document/d/1U0RFuI6RLt4gZm6gy3zYEOKHILus_9ajevpYTuGvg3k/edit?tab=t.0#heading=h.f1l8ljw7ngre",
+        paper: "https://drive.google.com/file/d/1eEghIBOQbVp97lyD-DqUaNqlHVfd6wY8/view?usp=sharing",
         poster: "https://docs.google.com/presentation/d/1k7BA6qxHX4d1mWpWEwymfJG4C5VapDzHCNm9uUFmdf8/edit?usp=sharing",
         github: "https://github.com/RuhaanSingh/Leveraging-the-Table-of-Contents-to-Improve-Efficiency-in-an-RAG-Powered-Chatbot-",
         publication: "https://journals.gmu.edu/jssr/article/view/5163"
