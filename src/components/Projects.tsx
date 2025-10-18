@@ -15,7 +15,7 @@ const Projects = () => {
     {
       title: "Dhol Tune Pro",
       subtitle: "Professional-Grade Tuning for Indian Percussion",
-      description: "The first professional-grade tuning solution designed specifically for Indian percussion instruments. Features real-time audio analysis with 99.9% tuning accuracy and instant detection (<1s). Built to bridge the gap between traditional artistry and modern precision technology, serving 500+ musicians worldwide.",
+      description: "The first professional-grade tuning solution designed specifically for Indian percussion instruments. Features real-time audio analysis with 85% accuracy and instant detection (<1s). Built to bridge the gap between traditional artistry and modern precision technology, serving 500+ musicians worldwide.",
       image: dholTuneProImage,
       technologies: ["Web Audio API", "React", "Real-time Processing", "Audio Analysis", "TypeScript"],
       status: "Live and serving 500+ musicians",
