@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Github, ExternalLink, FileText } from "lucide-react";
 import cropHealthImage from "@/assets/crophealth-ai.jpg";
 
+const dholTuneProImage = "/lovable-uploads/dholtunepro.png";
 const glaucoGuardImage = "/lovable-uploads/37160d22-e23b-4a6c-a490-97113824d979.png";
 const ragChatbotImage = "/lovable-uploads/9a6508fd-b402-4b22-be7a-1cbafe778228.png";
 const aachooImage = "/lovable-uploads/af8634bb-2ccf-4d04-9a7f-fe2630aedc96.png";
@@ -11,6 +12,19 @@ const parkinsonsImage = "/lovable-uploads/24b87b8c-2a82-4a79-8aea-6dbc61d721bb.p
 
 const Projects = () => {
   const projects = [
+    {
+      title: "Dhol Tune Pro",
+      subtitle: "Professional-Grade Tuning for Indian Percussion",
+      description: "The first professional-grade tuning solution designed specifically for Indian percussion instruments. Features real-time audio analysis with 99.9% tuning accuracy and instant detection (<1s). Built to bridge the gap between traditional artistry and modern precision technology, serving 500+ musicians worldwide.",
+      image: dholTuneProImage,
+      technologies: ["Web Audio API", "React", "Real-time Processing", "Audio Analysis", "TypeScript"],
+      status: "Live and serving 500+ musicians",
+      organization: "Independent Project",
+      type: "Full Stack Development",
+      links: {
+        demo: "https://dholtunepro.com"
+      }
+    },
     {
       title: "CropHealth AI",
       subtitle: "Portable Machine Learning for Sustainable Farming",
