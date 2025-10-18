@@ -68,7 +68,7 @@ const Navigation = () => {
           </div>
 
           <Button variant="outline" size="sm" className="hidden md:inline-flex" asChild>
-            <a href="https://drive.google.com/drive/recent" target="_blank" rel="noopener noreferrer">
+            <a href="https://drive.google.com/file/d/1eE34CASAzZmTSfcsAFcljDihq2N5WB87/view?usp=sharing" target="_blank" rel="noopener noreferrer">
               Resume
             </a>
           </Button>

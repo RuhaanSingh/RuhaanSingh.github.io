@@ -65,7 +65,7 @@ const Hero = () => {
               size="lg"
               asChild
             >
-              <a href="https://drive.google.com/drive/recent" target="_blank" rel="noopener noreferrer">
+              <a href="https://drive.google.com/file/d/1eE34CASAzZmTSfcsAFcljDihq2N5WB87/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                 Resume
                 <FileText className="ml-2 h-4 w-4" />
               </a>
