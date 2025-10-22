@@ -35,7 +35,7 @@ const Experience = () => {
     {
       role: "Cancer Research Intern",
       organization: "Johns Hopkins School of Medicine",
-      period: "Summer 2024",
+      period: "Summer 2024-2025",
       location: "Johns Hopkins",
       type: "Academic Research",
       description: "Conducted PCR and DNA methylation assays; analyzed biomarker data to support cancer diagnostics research in NABi oncology lab. 15 hours/week for 6 weeks.",
@@ -49,7 +49,7 @@ const Experience = () => {
     {
       role: "Competitive Dancer & Instructor",
       organization: "Virginia School of Bhangra",
-      period: "2021 - Present",
+      period: "2022 - Present",
       location: "Virginia",
       type: "Arts & Performance",
       description: "Won 3rd at 2023 & 2025, 2nd at 2024 international competitions; toured in 3 countries; instructed 20+ juniors weekly; performed with celebrity singers. 15 hours/week year-round.",
@@ -63,7 +63,7 @@ const Experience = () => {
     {
       role: "President & Choreographer",
       organization: "TJ Namaste Club",
-      period: "2021 - Present",
+      period: "2023 - Present",
       location: "TJHSST",
       type: "Cultural Leadership",
       description: "Led largest school event (2K attendees); raised $5K annually; managed 400+ participants; earned FCPS Peace Award for cultural bridge-building. 15 hours/week during school year.",
@@ -77,21 +77,21 @@ const Experience = () => {
     {
       role: "VP of Technology",
       organization: "TJ Mobile Apps Development Club",
-      period: "2021 - Present",
+      period: "2023 - Present",
       location: "TJHSST",
       type: "Technical Leadership",
-      description: "Taught mobile/web dev to 30+ peers weekly; led community app projects; coded Android tuning app for Indian instruments. 4 hours/week during school year.",
+      description: "Taught mobile/web dev to 30+ peers weekly; led community app projects; created web platform for tuning Indian instruments. 4 hours/week during school year.",
       achievements: [
         "Taught 30+ students weekly",
         "Led community app development projects",
-        "Developed Android tuning application"
+        "Developed web-based tuning platform"
       ],
       icon: Users
     },
     {
       role: "Volunteer STEM Instructor",
       organization: "Human Hope Foundation & Robotics Camps",
-      period: "2021 - 2024",
+      period: "2022 - 2025",
       location: "Various Locations",
       type: "STEM Outreach",
       description: "Taught Python, robotics, and engineering to 350+ underserved youth; co-created hands-on curricula for rockets, AI, and web dev. 15 hours/week during breaks.",
@@ -105,7 +105,7 @@ const Experience = () => {
     {
       role: "Conference Director",
       organization: "TJ Model UN Club",
-      period: "2021 - Present",
+      period: "2023 - Present",
       location: "TJHSST & Conferences",
       type: "Academic Competition",
       description: "Directed 400-delegate conference; mentored novices; won 10+ awards (2× Best Delegate) at Ivy League & national-level competitions. 6 hours/week during school year.",
@@ -119,7 +119,7 @@ const Experience = () => {
     {
       role: "Project Lead – Computer Vision",
       organization: "TJ Computer Vision Club",
-      period: "2022 - 2024",
+      period: "2024 - Present",
       location: "TJHSST",
       type: "Academic Project",
       description: "Led ASL-to-text recognition project (88% accuracy); used CNN + LSTM; improved generalization 23% via custom augmentation pipeline. 3 hours/week during school year.",
