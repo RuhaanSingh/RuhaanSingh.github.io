@@ -1,6 +1,8 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, MapPin, Users, Award } from "lucide-react";
+import Reveal from "@/components/effects/Reveal";
+import TiltCard from "@/components/effects/TiltCard";
 
 const Experience = () => {
   const experiences = [
@@ -150,66 +152,74 @@ const Experience = () => {
     <section id="experience" className="py-20 bg-muted/30">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16 fade-in">
+          <Reveal className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Leadership & <span className="gradient-text">Experience</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Active involvement in school organizations, cultural leadership, 
+              Active involvement in school organizations, cultural leadership,
               and competitive academic activities that shape my collaborative and leadership skills.
             </p>
-          </div>
+          </Reveal>
 
           <div className="space-y-6">
             {experiences.map((exp, index) => {
               const IconComponent = exp.icon;
               return (
-                <Card key={index} className="card-hover bg-card/50 backdrop-blur-sm">
-                  <CardHeader>
-                    <div className="flex items-start justify-between">
-                      <div className="flex items-center gap-4">
-                        <div className="p-3 rounded-lg bg-primary/10">
-                          <IconComponent className="h-6 w-6 text-primary" />
+                <Reveal
+                  key={index}
+                  direction={index % 2 === 0 ? "left" : "right"}
+                  delay={Math.min(index * 0.04, 0.24)}
+                >
+                  <TiltCard max={2}>
+                    <Card className="card-hover bg-card/40 backdrop-blur-md border-white/5 border-l-4 border-l-primary/40 hover:border-l-primary transition-colors">
+                      <CardHeader>
+                        <div className="flex items-start justify-between">
+                          <div className="flex items-center gap-4">
+                            <div className="p-3 rounded-lg bg-primary/10">
+                              <IconComponent className="h-6 w-6 text-primary" />
+                            </div>
+                            <div>
+                              <CardTitle className="text-xl mb-1">{exp.role}</CardTitle>
+                              <div className="text-lg text-primary font-medium">
+                                {exp.organization}
+                              </div>
+                              <div className="flex items-center gap-4 text-sm text-muted-foreground mt-2">
+                                <div className="flex items-center gap-1">
+                                  <Calendar className="h-4 w-4" />
+                                  {exp.period}
+                                </div>
+                                <div className="flex items-center gap-1">
+                                  <MapPin className="h-4 w-4" />
+                                  {exp.location}
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <Badge variant="outline">{exp.type}</Badge>
                         </div>
+                      </CardHeader>
+
+                      <CardContent>
+                        <p className="text-muted-foreground mb-4 leading-relaxed">
+                          {exp.description}
+                        </p>
+
                         <div>
-                          <CardTitle className="text-xl mb-1">{exp.role}</CardTitle>
-                          <div className="text-lg text-primary font-medium">
-                            {exp.organization}
-                          </div>
-                          <div className="flex items-center gap-4 text-sm text-muted-foreground mt-2">
-                            <div className="flex items-center gap-1">
-                              <Calendar className="h-4 w-4" />
-                              {exp.period}
-                            </div>
-                            <div className="flex items-center gap-1">
-                              <MapPin className="h-4 w-4" />
-                              {exp.location}
-                            </div>
-                          </div>
+                          <h4 className="font-medium mb-3">Key Achievements:</h4>
+                          <ul className="space-y-2">
+                            {exp.achievements.map((achievement, achIndex) => (
+                              <li key={achIndex} className="flex items-start gap-2 text-sm text-muted-foreground">
+                                <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0" />
+                                {achievement}
+                              </li>
+                            ))}
+                          </ul>
                         </div>
-                      </div>
-                      <Badge variant="outline">{exp.type}</Badge>
-                    </div>
-                  </CardHeader>
-
-                  <CardContent>
-                    <p className="text-muted-foreground mb-4 leading-relaxed">
-                      {exp.description}
-                    </p>
-
-                    <div>
-                      <h4 className="font-medium mb-3">Key Achievements:</h4>
-                      <ul className="space-y-2">
-                        {exp.achievements.map((achievement, achIndex) => (
-                          <li key={achIndex} className="flex items-start gap-2 text-sm text-muted-foreground">
-                            <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0" />
-                            {achievement}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </CardContent>
-                </Card>
+                      </CardContent>
+                    </Card>
+                  </TiltCard>
+                </Reveal>
               );
             })}
           </div>

@@ -123,40 +123,27 @@ All colors MUST be HSL.
     transform: translateY(-5px);
     box-shadow: var(--shadow-elegant);
   }
+}
 
-  .floating-animation {
-    animation: float 6s ease-in-out infinite;
-  }
+/* Custom scrollbar for a more crafted feel */
+::-webkit-scrollbar {
+  width: 10px;
+}
 
-  @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
-  }
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
 
-  .fade-in {
-    animation: fadeIn 0.8s ease-out forwards;
-  }
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--border));
+  border-radius: 999px;
+}
 
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--primary) / 0.4);
+}
 
-  .slide-in-left {
-    animation: slideInLeft 0.8s ease-out forwards;
-  }
-
-  @keyframes slideInLeft {
-    from { opacity: 0; transform: translateX(-50px); }
-    to { opacity: 1; transform: translateX(0); }
-  }
-
-  .slide-in-right {
-    animation: slideInRight 0.8s ease-out forwards;
-  }
-
-  @keyframes slideInRight {
-    from { opacity: 0; transform: translateX(50px); }
-    to { opacity: 1; transform: translateX(0); }
-  }
+::selection {
+  background: hsl(var(--primary) / 0.3);
+  color: hsl(var(--foreground));
 }
